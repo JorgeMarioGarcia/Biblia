@@ -1,0 +1,62 @@
+\documentclass[oneside, twocolumn,  12pt]{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum} % Para generar texto de ejemplo
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\usepackage{yfonts}
+
+
+
+
+% Configuración de los capítulos y secciones
+\titleformat{\chapter}[display]
+{\normalfont\bfseries\LARGE}
+{\filleft}
+{0pt}
+{\filcenter}
+[\vspace{2ex}\titlerule]
+
+
+% Configuración del encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+
+% Espaciado entre líneas
+\setstretch{1.15}
+
+\begin{document}
+	
+	\frontmatter
+	\title{La Biblia}
+	\author{Traducida al LaTeX}
+	\date{}
+	\maketitle
+	
+	\tableofcontents
+	
+	\mainmatter
+	
+	\part{Antiguo Testamento}
+	\onecolumn
+	
+	LA SANTA BIBLIA, ANTIGUO TESTAMENTO, VERSIÓN DE CASIODORO DE REINA (1569)
+	REVISADA POR CIPRIANO DE VALERA (1602), OTRAS REVISIONES: 1862, 1909 Y 1960
+	
+	Parte \# 1 (INCLUYE LA LEY), los 10 primeros libros del AT: Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rt, 1 S y 2 S
+	\twocolumn
+	
+	\include{genesis}
+	\include{exodo}
+	\include{levitico}
+	\include{Numeros}
+	\include{Deuteronomio}
+\end{document}
