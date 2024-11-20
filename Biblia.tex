@@ -10,7 +10,10 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 
-\usepackage{yfonts}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+
+
 
 
 
@@ -34,6 +37,34 @@
 \setstretch{1.15}
 
 \begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=0.72]{graficas/fondo.pdf}}} % Image background
+
+\vspace*{6cm}
+\par\normalfont\fontsize{50}{50}
+\begin{flushleft}
+%	\textbf{Introducción Redes Complejas}\\
+\end{flushleft}
+
+\begin{flushright}
+%	{\Large Con Python}
+\end{flushright}
+
+{\LARGE }\par % Book title
+\vspace*{5cm}
+%{\Large  Jorge Mario García Usuga}\par % Author name
+%{\Large  Mónica Johana Mesa Mazo}\par % Author name
+%{\Large  Valentina Zuluaga Zuluaga}\par % Author name
+%{Universidad del Quindío}\par
+\endgroup
+
+
+
 	
 	\frontmatter
 	\title{La Biblia}
@@ -53,10 +84,24 @@
 	
 	Parte \# 1 (INCLUYE LA LEY), los 10 primeros libros del AT: Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rt, 1 S y 2 S
 	\twocolumn
-	
+%	Pentateuco (Ley o Torá)
 	\include{genesis}
 	\include{exodo}
 	\include{levitico}
 	\include{Numeros}
 	\include{Deuteronomio}
+	
+%	Libros Históricos
+	\include{josue}
+	\include{Jueces}
+	\include{Rut}
+	\include{Samuel1}
+	\include{Samuel2}
+	\include{Reyes1}
+	\include{Reyes2}
+	\include{Cronicas1}
+	\include{Cronicas2}
+	\include{Esdras}
+	\include{Nehemias}
+	\include{Ester}
 \end{document}
