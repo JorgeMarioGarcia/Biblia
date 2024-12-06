@@ -1,4 +1,4 @@
-\documentclass[oneside, twocolumn,  10pt]{book}
+\documentclass[oneside,  10pt]{book}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -43,32 +43,23 @@
 
 \begingroup
 \thispagestyle{empty}
-\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=0.72]{graficas/fondo.pdf}}} % Image background
+\AddToShipoutPicture*{{\includegraphics[scale=1.0]{graficas/fondo.pdf}}} % Image background
 
 \vspace*{6cm}
 \par\normalfont\fontsize{50}{50}
-\begin{flushleft}
-%	\textbf{Introducción Redes Complejas}\\
-\end{flushleft}
 
-\begin{flushright}
-%	{\Large Con Python}
-\end{flushright}
 
 {\LARGE }\par % Book title
 \vspace*{5cm}
-%{\Large  Jorge Mario García Usuga}\par % Author name
-%{\Large  Mónica Johana Mesa Mazo}\par % Author name
-%{\Large  Valentina Zuluaga Zuluaga}\par % Author name
-%{Universidad del Quindío}\par
+
 \endgroup
 
 
 
 	
 	\frontmatter
-	\title{La Biblia}
-	\author{Traducida al LaTeX}
+	\title{La Santa Biblia}
+
 	\date{}
 	\maketitle
 	
@@ -77,93 +68,166 @@
 	\mainmatter
 	
 	\part{Antiguo Testamento}
-	\onecolumn
+
 	
-	LA SANTA BIBLIA, ANTIGUO TESTAMENTO, VERSIÓN DE CASIODORO DE REINA (1569)
-	REVISADA POR CIPRIANO DE VALERA (1602), OTRAS REVISIONES: 1862, 1909 Y 1960
+\section*{Introducción al Antiguo Testamento}
+
+El \textbf{Antiguo Testamento} es la primera sección de la Biblia, sagrada tanto para el cristianismo como para el judaísmo (donde se le conoce como la \textbf{Tanaj}). Es una colección de libros que narran la historia, la fe y las leyes del pueblo de Israel, desde la creación del mundo hasta los siglos previos al nacimiento de Jesús. Estos textos fueron escritos en su mayoría en hebreo, con algunas secciones en arameo, y abarcan un período de más de mil años.
+
+El Antiguo Testamento se divide en categorías temáticas principales:
+\begin{itemize}
+	\item \textbf{El Pentateuco (o la Torá)}: Relata el origen del mundo, la elección de Israel como pueblo de Dios y las leyes entregadas a Moisés.
+	\begin{itemize}
+		\item Génesis
+		\item Éxodo
+		\item Levítico
+		\item Números
+		\item Deuteronomio
+	\end{itemize}
+	
+	\item \textbf{Los Libros Históricos}: Narran la historia de Israel desde su entrada en la Tierra Prometida hasta el exilio en Babilonia y el retorno.
+	\begin{itemize}
+		\item Josué
+		\item Jueces
+		\item Rut
+		\item 1 Samuel
+		\item 2 Samuel
+		\item 1 Reyes
+		\item 2 Reyes
+		\item 1 Crónicas
+		\item 2 Crónicas
+		\item Esdras
+		\item Nehemías
+		\item Ester
+	\end{itemize}
+	
+	\item \textbf{Los Libros Poéticos y Sapienciales}: Incluyen reflexiones sobre la vida, el sufrimiento, la sabiduría y la relación del ser humano con Dios.
+	\begin{itemize}
+		\item Job
+		\item Salmos
+		\item Proverbios
+		\item Eclesiastés
+		\item Cantar de los Cantares
+	\end{itemize}
+	
+	\item \textbf{Los Libros Proféticos}: Contienen los mensajes de los profetas que llamaron al pueblo a la fidelidad a Dios y a la justicia, advirtiendo sobre las consecuencias de sus actos.
+	\begin{itemize}
+		\item \textbf{Profetas Mayores}:
+		\begin{itemize}
+			\item Isaías
+			\item Jeremías
+			\item Lamentaciones
+			\item Ezequiel
+			\item Daniel
+		\end{itemize}
+		\item \textbf{Profetas Menores}:
+		\begin{itemize}
+			\item Oseas
+			\item Joel
+			\item Amós
+			\item Abdías
+			\item Jonás
+			\item Miqueas
+			\item Nahúm
+			\item Habacuc
+			\item Sofonías
+			\item Hageo
+			\item Zacarías
+			\item Malaquías
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsection*{Importancia del Antiguo Testamento}
+
+Este conjunto de libros no solo forma la base del judaísmo, sino que también es fundamental para el cristianismo, ya que presenta los antecedentes históricos y teológicos para la llegada de Jesús, considerado en el Nuevo Testamento como el cumplimiento de las promesas hechas en estos textos.
+
+A través de relatos históricos, poesía, leyes y profecías, el Antiguo Testamento explora temas universales como la creación, el pecado, la redención y el pacto entre Dios y la humanidad.
+
+	
 	
 
-	\twocolumn
+
 %	Pentateuco (Ley o Torá)
 	\include{genesis}
 	\include{exodo}
-	\include{Levitico}
-	\include{Numeros}
-	\include{Deuteronomio}
-	
-%	Libros Históricos
-	\include{josue}
-	\include{Jueces}
-	\include{Rut}
-	\include{Samuel1}
-	\include{Samuel2}
-	\include{Reyes1}
-	\include{Reyes2}
-	\include{Cronicas1}
-	\include{Cronicas2}
-	\include{Esdras}
-	\include{Nehemias}
-	\include{Ester}
-	\include{job}
-	\include{salmos1}
-	\include{salmos2}
-	\include{Proverbios}
-	\include{Eclesiastes}
-	\include{Cantar}
-	\include{Isaias}
-	\include{Jeremias}
-	\include{Lamentaciones}
-	\include{Ezequiel}
-	\include{Daniel}
-	\include{Oseas}
-	\include{Joel}
-	\include{Amos}
-	\include{Abdias}
-	\include{Jonas}
-	\include{Miqueas}
-	\include{Nahum}
-	\include{Habacuc}
-	\include{Sofonias}
-	\include{Hageo}
-	\include{Zacarias}
-	\include{Malaquias}
-	
-\part{Nuevo Testamento}	
-
-%Evangelios y hechos de los apostoles
-
-\include{EvaMateo}
-\include{EvaMarcos}
-\include{EvaLucas}
-\include{EvaJuan}
-\include{hechos}
-
-%Epistolas de Pablo 
-
-\include{Romanos1}
-\include{corintios1}
-\include{corintios2}
-\include{galatas}	
-\include{Efesios}
-\include{Filipenses}
-\include{Colosenses}
-\include{Tesalonicenses1}
-\include{Tesalonicenses2}
-\include{Timoteo1}
-\include{Timoteo2}
-\include{Tito}
-\include{Filemon}
-
-%Cartas generales 
-\include{Hebreos}
-\include{Santiago}
-\include{Pedro1}
-\include{Pedro2}
-\include{Juan1}
-\include{Juan2}
-\include{Juan3}
-\include{Judas}
-\include{Apocalipsis}
+%	\include{Levitico}
+%	\include{Numeros}
+%	\include{Deuteronomio}
+%	
+%%	Libros Históricos
+%	\include{josue}
+%	\include{Jueces}
+%	\include{Rut}
+%	\include{Samuel1}
+%	\include{Samuel2}
+%	\include{Reyes1}
+%	\include{Reyes2}
+%	\include{Cronicas1}
+%	\include{Cronicas2}
+%	\include{Esdras}
+%	\include{Nehemias}
+%	\include{Ester}
+%	\include{job}
+%	\include{salmos1}
+%	\include{salmos2}
+%	\include{Proverbios}
+%	\include{Eclesiastes}
+%	\include{Cantar}
+%	\include{Isaias}
+%	\include{Jeremias}
+%	\include{Lamentaciones}
+%	\include{Ezequiel}
+%	\include{Daniel}
+%	\include{Oseas}
+%	\include{Joel}
+%	\include{Amos}
+%	\include{Abdias}
+%	\include{Jonas}
+%	\include{Miqueas}
+%	\include{Nahum}
+%	\include{Habacuc}
+%	\include{Sofonias}
+%	\include{Hageo}
+%	\include{Zacarias}
+%	\include{Malaquias}
+%	
+%\part{Nuevo Testamento}	
+%
+%%Evangelios y hechos de los apostoles
+%
+%\include{EvaMateo}
+%\include{EvaMarcos}
+%\include{EvaLucas}
+%\include{EvaJuan}
+%\include{hechos}
+%
+%%Epistolas de Pablo 
+%
+%\include{Romanos1}
+%\include{corintios1}
+%\include{corintios2}
+%\include{galatas}	
+%\include{Efesios}
+%\include{Filipenses}
+%\include{Colosenses}
+%\include{Tesalonicenses1}
+%\include{Tesalonicenses2}
+%\include{Timoteo1}
+%\include{Timoteo2}
+%\include{Tito}
+%\include{Filemon}
+%
+%%Cartas generales 
+%\include{Hebreos}
+%\include{Santiago}
+%\include{Pedro1}
+%\include{Pedro2}
+%\include{Juan1}
+%\include{Juan2}
+%\include{Juan3}
+%\include{Judas}
+%\include{Apocalipsis}
 
 
 
